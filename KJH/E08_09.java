@@ -1,11 +1,11 @@
 package may0514;
 //object > Throwable > Exception > RuntimeException > ArithmeticException
-//runtimeexceptionÀº ¾ğÃ¼Å©¿¹¿Ü / ¼±¾ğµû·ÎÇÒ ÀÌÀ¯ ¾øÀ½ ÀÇµµÀûÀ¸·Î ¿À·ù ¹ß»ıÇÏ±â À§ÇÑ ¸Ş¼Òµå
+//runtimeexceptionì€ ì–¸ì²´í¬ì˜ˆì™¸ / ì„ ì–¸ë”°ë¡œí•  ì´ìœ  ì—†ìŒ ì˜ë„ì ìœ¼ë¡œ ì˜¤ë¥˜ ë°œìƒí•˜ê¸° ìœ„í•œ ë©”ì†Œë“œ
 class UnsupportedFunctionException extends RuntimeException {
-	final private int ERR_CODE = 100;
+	final private int ERR_CODE = 100; //final ì„¤ì •ì‹œ ì´ˆê¹ƒê°’ ì„¤ì •ì„ í•´ì¤˜ì•¼ í•œë‹¤.
 	
 	UnsupportedFunctionException() {
-		super(); // »óÀ§ ¸Ş¼Òµå¿¡¼­ ÀúÀåÇÒ ¼ö ÀÖµµ·Ï ¼³Á¤
+		super(); // ìƒìœ„ ë©”ì†Œë“œì—ì„œ ì €ì¥í•  ìˆ˜ ìˆë„ë¡ ì„¤ì •
 	}
 	
 	UnsupportedFunctionException(String message, int x) {
@@ -25,6 +25,6 @@ class UnsupportedFunctionException extends RuntimeException {
 
 public class E08_09 {
 	public static void main(String[] args) {
-		throw new UnsupportedFunctionException ("Áö¿øÇÏÁö ¾Ê´Â ±â´ÉÀÔ´Ï´Ù.", 100); // ¹«Á¶°Ç ¿¡·¯ ¹ß»ı
+		throw new UnsupportedFunctionException ("ì§€ì›í•˜ì§€ ì•ŠëŠ” ê¸°ëŠ¥ì…ë‹ˆë‹¤.", 100); // ë¬´ì¡°ê±´ ì—ëŸ¬ ë°œìƒ
 	}
 }
